@@ -6,19 +6,15 @@ import { Recipe } from '../../recipe.model';
   templateUrl: './recipe-item.component.html',
   styleUrls: ['./recipe-item.component.css']
 })
-export class RecipeItemComponent implements OnInit {
+export class RecipeItemComponent {
 
   @Input() recipe: Recipe;
+  @Input() index: number;
 
-  @Output() recipeSelected = new EventEmitter<void>();
+  // @Output() recipeSelected = new EventEmitter<void>();
 
-  constructor() { }
 
-  ngOnInit() {
-  }
 
-  onSelected() {
-    this.recipeSelected.emit();
-  }
+
 
 }
