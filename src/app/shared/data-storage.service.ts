@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 import { RecipeService } from '../recipes/recipe.service';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
 import { Ingredient } from './ingredient.model';
+import 'rxjs/Rx';
 
 @Injectable()
 export class DataStorageService {
