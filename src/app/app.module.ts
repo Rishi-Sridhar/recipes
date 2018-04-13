@@ -25,6 +25,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpModule,
+    BrowserAnimationsModule,
     CollapseModule.forRoot()
   ],
   providers: [RecipeService, ShoppingListService, DataStorageService, AuthService, AuthGuard],
